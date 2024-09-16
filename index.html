@@ -3,41 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Blog</title>
-
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>My Blog</title>
   </head>
-
   <body>
-    <header id="header-box-index">
-      <button id="dark-mode-button">☀️</button>
+    <header>
+      <h1>Alejandro Villavicencio's Blog</h1>
+      <button class="theme-toggle">🌞🌙</button>
+      <button class="post-button" onclick="location.href='blog.html'">
+        View Posts
+      </button>
     </header>
 
-    <main id="main-index">
-      <section id="main-box-website-title">
-        <h1 id="website-title">My First Blog</h1>
-      </section>
+    <main>
+      <aside>
+        <img src="./assets/images/spike.png" alt="Miguel's Avatar" />
+      </aside>
 
-      <section id="main-box-post-form">
-        <form id="post-form" method="post">
-          <h2>What's on your mind?</h2>
+      <section>
+        <h2>Share Your Thoughts!</h2>
+        <form>
+          <label for="usernameInput">Username:</label>
+          <input name="username" id="usernameInput" type="text" />
 
-          <label for="form-username">Username:</label>
-          <input id="form-username" type="text" />
+          <label for="titleInput">Post Title:</label>
+          <input name="title" id="titleInput" type="text" />
 
-          <label for="form-title">Title:</label>
-          <input id="form-title" type="text" />
+          <label for="contentInput">Post Content:</label>
+          <textarea name="content" id="contentInput" rows="4"></textarea>
 
-          <label for="form-content">Content:</label>
-          <textarea id="form-content"></textarea>
-
-          <button id="submit-button" type="submit">Submit</button>
+          <input type="submit" value="Submit Post" />
         </form>
       </section>
     </main>
 
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/darkMode.js"></script>
+    <footer>
+      <p>
+        <a href="https://github.com/AlejnadroVill/Personal-Blog" target="_blank"
+          >© Alejandro Villavicencio</a
+        >
+      </p>
+    </footer>
+
+    <!-- JavaScript links -->
+    <script src="./assets/js/theme-toggle.js"></script>
+    <script src="./assets/js/form-handler.js"></script>
   </body>
 </html>
