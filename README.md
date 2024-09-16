@@ -19,7 +19,7 @@ SO THAT I can share my thoughts, view posts, and switch between light and dark t
 
 ## Try my app
 
-1. You can try the app on here: <https://alejnadrovill.github.io/Personal-Blog2//>
+1. You can try the app on here: <https://alejnadrovill.github.io/Personal-Blog/>
 
 ## Visual reference of project
 
